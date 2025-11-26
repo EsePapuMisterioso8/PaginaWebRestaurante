@@ -56,23 +56,23 @@ a:visited{
 }
 /*Asigna imágenes de fondo específicas a cada tarjeta*/
 #tarjetaPaqueteBratwurst{
-    background-image: url("/imagenes/brat.jpg");
+    background-image: url("imagenes/brat.jpg");
 }
 
 #tarjetaPaqueteBaviera{
-    background-image: url("/imagenes/pretzel.jpg");
+    background-image: url("imagenes/pretzel.jpg");
 }
 
 #tarjetaPaqueteOktoberfest{
-    background-image: url("/imagenes/fest.jpg");
+    background-image: url("imagenes/fest.jpg");
 }
 
 #tarjetaPaqueteBerlin{
-    background-image: url("/imagenes/berlin.jpg");
+    background-image: url("imagenes/berlin.jpg");
 }
 
 #tarjetaPaqueteFamiliar{
-    background-image: url("/imagenes/istockphoto-1187784609-612x612.jpg");
+    background-image: url("imagenes/istockphoto-1187784609-612x612.jpg");
 }
 
 /*le da estilo visual común a las tarjetas con imagen ajustada, bordes redondeados, texto blanco y disposición interna hacia abajo.*/

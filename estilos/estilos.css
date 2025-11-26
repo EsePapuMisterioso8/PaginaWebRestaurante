@@ -74,7 +74,7 @@ nav a:hover{
 
 /*Le da estilo al banner principal de la página*/
 .hero{
-    background-image: url("imagenes/verdadera.jpg");
+    background-image: url("../imagenes/verdadera.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

@@ -1,0 +1,142 @@
+/*Define la estructura general de la página, quitando márgenes, aplicando fuente y usando flex para que el footer quede abajo*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Crea un contenedor centrado y limitado donde se muestra el contenido principal*/
+.contenedorPrincipal{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
+    flex: 1;
+}
+/*Elimina el subrayado de los enlaces y su será el color del texto*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Evita que los enlaces visitados cambien de color*/
+a:visited{
+    color: inherit;
+}
+/*Diseña la barra de navegación y la fija en la parte superior.*/
+header{
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/*Da estilo al logo en el header*/
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/*Define el estilo de los enlaces del menú dentro del header*/
+nav a{
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*Cambia el color del menú al pasar el mouse*/
+nav a:hover{
+    color: #ffc300;
+}
+/*Diseña las tarjetas de cupones con sombra, borde rojo, transiciones ,etc.*/
+.tarjetaCuponWillkomen,
+.tarjetaCuponCurrywurstGratis,
+.tarjetaCupon2PretzelsPorUno,
+.tarjetaCuponBratwurstUpgrade,
+.tarjetaCuponBierGratis{
+    background: #ffffff;
+    border-left: 6px solid #d40000;
+    padding: 22px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    max-width: 600px;
+    margin: 15px auto;
+}
+/*Hace que las tarjetas se levanten y tengan más sombra al pasar el mouse*/
+.tarjetaCuponWillkomen:hover,
+.tarjetaCuponCurrywurstGratis:hover,
+.tarjetaCupon2PretzelsPorUno:hover,
+.tarjetaCuponBratwurstUpgrade:hover,
+.tarjetaCuponBierGratis:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+/*Da estilo al título de cada tarjeta de cupón*/
+.tarjetaCuponWillkomen h3,
+.tarjetaCuponCurrywurstGratis h3,
+.tarjetaCupon2PretzelsPorUno h3,
+.tarjetaCuponBratwurstUpgrade h3,
+.tarjetaCuponBierGratis h3{
+    font-size: 22px;
+    color: #b00000;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*Le da estilo al texto de los cupones*/
+.tarjetaCuponWillkomen p,
+.tarjetaCuponCurrywurstGratis p,
+.tarjetaCupon2PretzelsPorUno p,
+.tarjetaCuponBratwurstUpgrade p,
+.tarjetaCuponBierGratis p{
+    margin: 0;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/*Diseña el botón rojo donde el usuario puede pedir el cupón*/
+.envoltorioPedir{
+    display: inline-block;
+    background-color: #d40000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+/*Le da estilo al texto del botón*/
+.envoltorioPedir a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+/*Aplica un efecto de agrandamiento y cambio de color al pasar el mouse*/
+.envoltorioPedir:hover{
+    background-color: #b00000;
+    transform: scale(1.04);
+}
+
+/*Le da estilo a el pie de pagina*/
+footer{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 0.9em;
+}

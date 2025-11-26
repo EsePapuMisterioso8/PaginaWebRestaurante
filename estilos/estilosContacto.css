@@ -1,0 +1,127 @@
+
+
+
+
+/*Crea una contenedor centrado que limita el ancho del contenido.*/
+.contenedor{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+/*Le da estilo a cada section con fondo blanco, bordes redondeados,sombras, separación*/
+section{
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+/*Hace que los elementos del formulario se acomoden verticalmente con espacio entre ellos*/
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+/*Le da estilo a los campos del formulario con borde gris, redondeados y modifica el tamaño del texto*/
+.formulario input,
+.formulario textarea{
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+/*Diseña el botón del formulario como botón rojo con texto blanco*/
+.formulario button{
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*Cuando pasas el mouse sobre el botón, cambia a negro*/
+.formulario button:hover{
+    background-color: #000;
+}
+/*Da estilo al iframe del mapa que tome el ancho de la pagina,altura fija y bordes redondeados*/
+.mapa iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+/*Da estilo a los enlaces fuera del menu con color rojo y subrayado*/
+a {
+    color: #c8102e;
+    text-decoration: none;
+}
+/*Cuando se pasa el mouse, se subraya*/
+a:hover {
+    text-decoration: underline;
+}
+/*Define el estilo del cuerpo de la pagina(quitando margenes ,aplicando fuente,cambiando el color del fondo y cambiando el 
+color de letra 
+*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Hace que el main ocupe el espacio restante de la pantalla para empujar el footer*/
+main{
+    flex: 1; 
+}
+/*Hace que los links tomen el color del contenedor*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*cambia que pasa cuando el enlace es visitado*/
+a:visited{
+    color: inherit;
+}
+/*Le da formato a el encabezado poniendo el fondo en negro , texto en blanco, centrado y que sea sticky*/
+header{
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/*Da estilo al a la clase logo en el header*/
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/*Da estilo a los enlaces del menu*/
+nav a{
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*Al pasar el mouse sobre los enlaces del menú, cambian a amarillo*/
+nav a:hover{
+    color: #ffc300;
+}
+
+/*Da estilo al pie de pagina*/
+footer{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

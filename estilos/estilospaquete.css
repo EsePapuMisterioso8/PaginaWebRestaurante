@@ -1,0 +1,155 @@
+/*Crea una cuadrícula para acomodar tarjetas*/
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+    padding: 30px;
+}
+/*Le da estilo al encabezado haciendo que sea negro fijo con menú alineado*/
+header{
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*Estiliza el texto del logo con tamaño grande y negritas*/
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/*Da estilo a los enlaces del menú con margen y color blanco*/
+nav a{
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*Cambia el color del enlace del menú al pasar el cursor*/
+nav a:hover{
+    color: #ffc300;
+}
+/*Le da estilo global al cuerpo: márgenes, fuente y color de fondo*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+/*Quita márgenes y aplica negritas a todos los títulos*/
+h1, h2 , h3{
+    margin: 0;
+    font-weight: bold;
+}
+a{
+    /*Elimina subrayados y mantiene el color de losenlaces*/
+    text-decoration: none;
+    color: inherit;
+}
+/*Evita que los enlaces visitados cambien de color*/
+a:visited{
+    color: inherit;
+}
+/*Asigna imágenes de fondo específicas a cada tarjeta*/
+#tarjetaPaqueteBratwurst{
+    background-image: url("/imagenes/brat.jpg");
+}
+
+#tarjetaPaqueteBaviera{
+    background-image: url("/imagenes/pretzel.jpg");
+}
+
+#tarjetaPaqueteOktoberfest{
+    background-image: url("/imagenes/fest.jpg");
+}
+
+#tarjetaPaqueteBerlin{
+    background-image: url("/imagenes/berlin.jpg");
+}
+
+#tarjetaPaqueteFamiliar{
+    background-image: url("/imagenes/istockphoto-1187784609-612x612.jpg");
+}
+
+/*le da estilo visual común a las tarjetas con imagen ajustada, bordes redondeados, texto blanco y disposición interna hacia abajo.*/
+#tarjetaPaqueteBratwurst,
+#tarjetaPaqueteBaviera,
+#tarjetaPaqueteOktoberfest,
+#tarjetaPaqueteBerlin,
+#tarjetaPaqueteFamiliar{
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 300px;
+}
+/*Le da una capa oscura semitransparente para resaltar el texto*/
+.envoltorioTexto{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    backdrop-filter: blur(3px);
+}
+
+/*Estiliza el título con color dorado y tamaño grande*/
+.envoltorioTexto h3{
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f3c537;
+}
+/*Define márgenes y sangría para la lista de características del paquete*/
+.envoltorioTexto ul{
+    margin: 10px 0;
+    padding-left: 20px;
+}
+/*Coloca el precio y el botón en línea, separados y centrados*/
+.envoltorioPrecioyPedir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+/*Muestra el precio dentro de una etiqueta amarilla con negritas*/
+.precio span{
+    font-size: 22px;
+    font-weight: bold;
+    background: #f3c537;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+/*Diseña el botón rojo de “Pedir” con padding, bordes redondeados y transición*/
+.envoltorioPedir a{
+    background-color: #c30000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+/*Hace el botón más brillante y ligeramente más grande al pasar el cursor*/
+.envoltorioPedir a:hover{
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+/*Le da el estilo al pie de pagina*/
+footer{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 243px;
+    font-size: 0.9em;
+}

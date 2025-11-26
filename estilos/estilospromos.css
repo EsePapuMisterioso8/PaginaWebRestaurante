@@ -1,0 +1,139 @@
+/*Hace que el main se expanda para ocupar todo el espacio vertical disponible*/
+main{
+    flex:1;
+}
+/*Crea una cuadrícula con tarjetas, espacio entre ellas y padding*/
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+    padding: 30px;
+    
+}
+/*Quita el subrayado y mantiene el color de los enlaces*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Evita que los enlaces visitados cambien de color*/
+a:visited{
+    color: inherit;
+}
+/*Crea un encabezado negro fijado hacia arriba*/
+header{
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/*Estiliza el logo con texto grande y en negritas*/
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/*Le da estilo al menú con  color blanco, negritas y separación entre enlaces*/
+nav a{
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*Cambia el color del enlace del menú a amarillo al pasar el cursor*/
+nav a:hover{
+    color: #ffc300;
+}
+/*Configura la página eliminando márgenes, aplica fuente, fondo claro, color del texto y estructura vertical*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Elimina márgenes y pone los títulos en negritas*/
+h1, h2 , h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+/*aplica estilo a las tarjetas con fondo degradado, esquinas redondeadas, sombra,etc*/
+.tarjetaPromoHoraAlemana,
+.tarjetaPromoDomingoDePretzel,
+.tarjetaPromoDiaSalchicha,
+.tarjetaPromoEstudiantil,
+.tarjetaPromoOktoberfest{
+    background: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);
+    border-left: 6px solid #f3c537;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: center;
+
+}
+/*le da animación al pasar el mause*/
+.tarjetaPromoHoraAlemana:hover,
+.tarjetaPromoDomingoDePretzel:hover,
+.tarjetaPromoDiaSalchicha:hover,
+.tarjetaPromoEstudiantil:hover,
+.tarjetaPromoOktoberfest:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+
+}
+
+/*Colorea los títulos de las tarjetas en dorado y ajusta el tamaño y márgenes*/
+#tarjetaPromoHoraAlemana h3,
+#tarjetaPromoDomingoDePretzel h3,
+#tarjetaPromoDiaSalchicha h3,
+#tarjetaPromoEstudiantil h3,
+#tarjetaPromoOktoberfest h3{
+    color: #f3c537;
+    margin-top: 0px;
+    font-size: 22px;
+}
+/*Estiliza los párrafos de las tarjetas con márgenes y con espaciado entre líneas*/
+#tarjetaPromoHoraAlemana p,
+#tarjetaPromoDomingoDePretzel p,
+#tarjetaPromoDiaSalchicha p,
+#tarjetaPromoEstudiantil p,
+#tarjetaPromoOktoberfest p{
+    margin: 12px 0;
+    line-height: 1.4;
+}
+/*Diseña el botón rojo de “Pedir” dandole color blanco, bordes redondeados, padding y efecto de transición*/
+.envoltorioPedir a{
+    background-color: #c30000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3 ease;
+}
+/*Hace el botón más brillante y más grande al pasar el cursor*/
+.envoltorioPedir a:hover{
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+/*Le da estilo al pie de pagina*/
+footer{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

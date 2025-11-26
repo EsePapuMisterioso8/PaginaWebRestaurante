@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--Se enlaza el codigo css de estilosContacto.css y la imagen para el favicon desde la carpeta imagenes-->
+    <link rel="stylesheet" href="/estilos/estilosContacto.css">
+    <link rel="icon" type="image/jpg" href="imagenes/icono.jpg" >
+</head>
+<body>
+
+    <!--Se crea el encabezado de la pagina colocando el logo , y los apartados del menu de navegación de la página-->
+    <header>
+        <div class="logo">📞 Contáctanos</div>
+
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/galeria.html">Galería</a>
+            <a href="/paquetes.html">Paquetes</a>
+            <a href="/promociones.html">Promociones</a>
+            <a href="/cupones.html">Cupones</a>
+            <a href="/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <!--Este es el apartado principal de la página donde estara la információn principal-->
+    <main class="contenedorPrincipal">
+        <!--Aqui esta la información de contacto-->
+        <section class="informacionContacto">
+            <h2>Informacion del Restaurante</h2>
+            <p><strong>Dirección:</strong> Berlín 132, Ciudad De México</p>
+            <p><strong>Telefono:</strong><a href="">56 8765 3498</a></p>
+            <p><strong>Email:</strong>brathausoficial@gmail.com</p>
+            <p><strong>Whatsapp:</strong><a href="https://wa.me/5687653498">Envianos mensaje</a></p>
+        </section>
+        <!--Aqui hay un formulairo para pedir un comentario al usuario , este formulario usa el metodo post-->
+        <section class="formulario">
+            <h2> ¡Tu opinion nos importa! </h2>
+            <form method="post">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" placeholder="Ingresa tu Nombre" required>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Ingresa tu Email" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aqui" required></textarea>
+                <button type="submit" class="botonEnviar">Enviar</button>
+                <button type="reset" class="botonEliminar">Limpiar</button>
+            </form>
+        </section>
+        <!--Aqui se coloca la información de horarios-->
+        <section class="horarios">
+            <h2>Nuestros horarios son:</h2>
+            <ul>
+                <li>Lunes a viernes de 10:00 AM - 11:00 PM</li>
+                <li>Sábados: 12:00 PM - 11:00 PM</li>
+                <li>Domingos: 12:00 PM - 7:00 PM</li>
+            </ul>
+        </section>
+        <!--Aquí se coloca un mapa que ayuda a generar referencia (ficticia) de la ubicación del restaurante-->
+        <section class="mapa">
+            <h2>Nuestra Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3756.6693126465966!2d-99.01466442532008!3d19.68410868260178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCENTENARIO%20NO.%2012%2C%20SAN%20PEDRO%20ATZOMPA%2C%2055771!5e0!3m2!1ses-419!2smx!4v1763928929471!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <!--Pie de pagina de la vista-->
+    <footer>
+        <p> Martín: Ingeniería en computación: Programación Web 1</p>
+    </footer>
+    
+</body>
+</html>

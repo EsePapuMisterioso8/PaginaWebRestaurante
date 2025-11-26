@@ -1,0 +1,147 @@
+
+
+/*Establece el tamaño y peso del texto del logo*/
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/*La da estilo de enlaces del menú con color blanco y espacio entre ellos*/
+nav a{
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*Cambia el color de los enlaces del menú al pasar el mouse*/
+nav a:hover{
+    color: #ffc300;
+}
+/*Quita subrayado y usa el color del fondo para el enlace*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Evita que los enlaces visitados cambien de color*/
+a:visited{
+    color: inherit;
+}
+
+
+
+
+/*Hace que el cuerpo tenga margen cero, fuente general y fondo claro*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+/*Crea el encabezado negro fijo arriba*/
+header{
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*Da estilo a los enlaces dentro del header*/
+header nav a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Subraya los enlaces del menú cuando pasas el cursor*/
+header nav a:hover{
+    text-decoration: underline;
+}
+/*Le da estilo al pie de pagina*/
+footer{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+/*Define el contenedor principal del menú con ancho limitado y centrado*/
+.menu{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+/*Centra el título principal del menú*/
+.menu h1{
+    text-align: center;
+}
+/*La da estilo a los títulos de categoría con tamaño grande y línea inferior*/
+.categoria{
+    margin-top: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #444;
+    padding-bottom: 6px;
+}
+
+/*Crea una cuadrícula para los platillos del menú*/
+.galeriaMenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap:  30px;
+    margin-top: 20px;
+}
+/*Le da estilo a cada tarjeta de platillo con fondo claro, sombras y animación*/
+.itemMenu{
+    background: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    transition: transform 0.25s;
+    text-align: center;
+}
+/*Aumenta ligeramente el tamaño de la tarjeta al pasar el mouse*/
+.itemMenu:hover{
+    transform: scale(1.03);
+}
+/*Ajusta las imágenes a la tarjeta recortándolas*/
+.itemMenu img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+/*Da estilo al texto bajo la imagen del platillo*/
+.itemMenu figcaption{
+    font-size: 0.9rem;
+    color: #555;
+}
+/*Da estilo a la tabla de porciones con ancho completo, bordes y fondo blanco*/
+table.Proporciones{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+    border: 2px solid #ccc;
+}
+/*Estilo del título de la tabla*/
+table caption{
+    font-weight: bold;
+    padding: 5px 0;
+}
+/*Aplica bordes, padding y alineación las celdas y encabezados*/
+table th,
+table td{
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+/*Da fondo gris claro para los encabezados*/
+table th{
+    background: #ddd;
+}
+/*Alterna el color de las filas*/
+table tr:nth-child(even){
+    background: #f3f3f3;
+}
